@@ -12,7 +12,7 @@ describe('calculate', () => {
     expect(calculate('8', '5', '-')).toBe(3)
   });
 
-  it(`given two strings representing numbers and a string of 'x', returns the result of multiplying the two numbers together`, () => {
+  it(`given two strings representing numbers and a string of 'x', returns the second number subtracted from the first number`, () => {
     expect(calculate('3', '5', 'x')).toBe(15)
     expect(calculate('10', '4', 'x')).toBe(40)
   });
@@ -72,7 +72,7 @@ describe('calculate', () => {
     expect(calculate('31', '5', 'subtracted from')).toBe(26)
   })
 
-  it(`allows for the words 'multiplied by' in multiplication`, () => {
+  it(`allows for the words 'multiplied by' in division`, () => {
     expect(calculate('3', '5', 'multiplied by')).toBe(15)
     expect(calculate('3', '50', 'multiplied by')).toBe(150)
   })
